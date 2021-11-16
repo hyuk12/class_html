@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 5px;
+            width: 100%;
+            height: 100px;
+            background-color: burlywood;
+        }
+
+        div.inner {
+            margin: 5px;
+            width: 100%;
+            height: 50px;
+            background-color: coral;
+
+        }
+
+        div.inner>.ininner {
+            margin: 5px;
+            width: 100%;
+            height: 10px;
+            background-color: chartreuse;
+        }
+
+        span {
+            display: block;
+            margin: 5px;
+            width: 30px;
+            height: 90px;
+            background-color: cadetblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="inner">
+            <div class="ininner">
+
+            </div>
+        </div>
+    </div>
+    <div></div>
+    <div></div>
+
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+</body>
+
+</html>
