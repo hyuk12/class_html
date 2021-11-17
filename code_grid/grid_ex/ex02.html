@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: lightcyan;
+            border: 5px solid #000;
+            width: 600px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* justify-items: start; 왼쪽*/
+            /* justify-items: stretch; 기본값 가득찬다 */
+            justify-items: center;
+            /* 센터 */
+            /* justify-items: end; 끝*/
+            /* align-items: start; 값  */
+            align-items: center;
+            /* 센터 */
+            /* align-items: end; 끝 */
+            /* align-items: stretch; 늘어나는거 가득차는것 기본값 */
+        }
+
+        .parent div {
+            text-align: center;
+            color: black;
+            background-color: darkkhaki;
+            border: 1px solid #fff;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+
+</html>
