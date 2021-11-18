@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+
+            display: grid;
+            grid-template-columns: 300px 1fr 300px;
+            grid-template-rows: 100px 1fr 100px;
+            gap: 10px;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .container div {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            background-color: deepskyblue;
+            padding: 20px;
+
+        }
+
+        .header {
+            grid-column: 1 / span 3;
+
+        }
+
+        .menu {
+            grid-row: 2 / span 2;
+        }
+
+        /* .container>.menu {
+            grid-row: 2 / 4;
+            grid-column: 1;
+
+        } */
+
+        /* .container>.main {
+            grid-column: 2;
+            grid-row: 2 / 4;
+        }
+
+        .container>.aside {
+            grid-column: 3;
+            grid-row: 2 / 4;
+        } */
+
+        .footer {
+            grid-column: 2 / 4;
+
+        }
+
+        .
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="menu">menu <img src="/라이언.jpg" alt=""></div>
+        <div class="main">main <img src="/도라에몽.jpg" alt=""></div>
+        <div class="aside">aside <img src="/보노보노.png" alt=""></div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>
