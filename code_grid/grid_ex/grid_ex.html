@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            display: grid;
+            border: 5px double #000;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto auto auto;
+            height: 100vh;
+        }
+
+        .container div {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid #000;
+        }
+
+        .header {
+            grid-area: 1 / 1 / 1 / 6;
+        }
+
+        .nav {
+            grid-area: 2 / 1 / 2 / 6;
+        }
+
+        .section {
+            grid-area: 3 / 1 / 4 / 3;
+        }
+
+        .article {
+            grid-area: 4 / 1 / 6 / 3;
+        }
+
+        .aside {
+            grid-area: 3 / 3 / 6 / 6;
+        }
+
+        .footer {
+            grid-area: 6 / 1 / 6 / 6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="nav">nav</div>
+        <div class="section">section</div>
+        <div class="article">article</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>
