@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .frame {
+            width: 960px;
+            background-color: white;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, minmax(200px, auto));
+            grid-template-areas:
+                'box1 box2 box3'
+                'box4 box5 box6';
+        }
+
+        .frame div {
+            padding: 25px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.30);
+            text-align: center;
+        }
+
+        .frame div:nth-child(1) {
+            grid-area: box1;
+        }
+
+        .frame div:nth-child(2) {
+            grid-area: box2;
+        }
+
+        .frame div:nth-child(3) {
+            grid-area: box3;
+        }
+
+        .frame div:nth-child(4) {
+            grid-area: box4;
+        }
+
+        .frame div:nth-child(5) {
+            grid-area: box5;
+        }
+
+        .frame div:nth-child(6) {
+            grid-area: box6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sed!</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque magni nihil expedita laboriosam dolorum
+            amet!</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur sit est eum quam id saepe
+            ratione ipsam minus maiores.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, minima?</div>
+    </div>
+</body>
+
+</html>

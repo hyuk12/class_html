@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .parent {
+            border: 5px solid #000;
+            background-color: khaki;
+            height: 700px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .item {
+            font-size: 30px;
+            border: 1px solid #000;
+            background-color: skyblue;
+            width: 150px;
+            height: 150px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .item div {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            text-align: center;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .one div {
+            background-color: black;
+            color: white;
+            display: grid;
+            justify-self: start;
+            align-self: baseline;
+        }
+
+        .two div {
+            background-color: violet;
+            justify-self: end;
+            align-self: flex-start;
+        }
+
+        .three div {
+            background-color: wheat;
+            justify-self: start;
+            align-self: flex-end;
+        }
+
+        .four div {
+            background-color: yellowgreen;
+            justify-self: end;
+            align-self: flex-end;
+        }
+
+        .five div {
+            width: auto;
+            height: auto;
+            justify-self: stretch;
+            align-self: stretch;
+        }
+
+        .six div {
+            justify-self: right;
+        }
+
+        .seven div {
+            justify-self: left;
+        }
+
+        .eight div {
+            align-self: flex-end;
+        }
+
+        .nine div {
+            width: auto;
+            height: auto;
+            background-color: tomato;
+            justify-self: stretch;
+            align-self: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="item one">
+            <div><img src="https://placeimg.com/100/100/any" alt=""></div>
+        </div>
+        <div class="item two">
+            <div><img src="https://placeimg.com/100/100/any" alt=""></div>
+        </div>
+        <div class="item three">
+            <div><img src="https://placeimg.com/100/100/any" alt=""></div>
+        </div>
+        <div class="item four">
+            <div><img src="https://placeimg.com/100/100/any" alt=""></div>
+        </div>
+        <div class="item five">
+            <div><img src="https://placeimg.com/100/100/any" alt=""></div>
+        </div>
+        <div class="item six">
+            <div><img src="https://placeimg.com/100/100/any" alt=""></div>
+        </div>
+        <div class="item seven">
+            <div><img src="https://placeimg.com/100/100/any" alt=""></div>
+        </div>
+        <div class="item eight">
+            <div><img src="https://placeimg.com/100/100/any" alt=""></div>
+        </div>
+        <div class="item nine">
+            <div><img src="https://placeimg.com/100/100/any" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>

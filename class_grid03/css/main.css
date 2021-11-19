@@ -1,0 +1,110 @@
+body {
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 150px 1fr 1fr 1fr 150px;
+            grid-template-rows: 100px 1fr 1fr 1fr 1fr 100px;
+            grid-template-areas:
+                'header header header header header'
+                'menu main main main top'
+                'menu main main main aside'
+                'menu main main main  aside'
+                'menu main main main  bottom'
+                'footer footer footer footer footer';
+
+
+        }
+
+        .container div {
+            padding: 20px;
+            text-align: center;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            background-color: deepskyblue;
+            border: 1px solid #000;
+
+
+        }
+
+        .header {
+            grid-area: header;
+
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .main {
+            grid-area: main;
+        }
+        /* .one{
+            background-color: khaki;
+            grid-area: one;
+        }
+        .two{
+            background-color: khaki;
+            grid-area: two;
+        }
+        .three{
+            background-color: khaki;
+            grid-area: three;
+        } */
+
+        .top {
+            grid-area: top;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .bottom {
+            grid-area: bottom;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+        .main {
+            gap: 5px;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            'one two three four'
+            'one two three four'
+            'one two three four'
+            'one two three four';
+        }
+
+        .main div {
+            
+            height: auto;
+            background-color: khaki;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .main div:nth-child(1) {
+            grid-area: one;
+        }
+
+        .main div:nth-child(2) {
+            grid-area: two;
+        }
+
+        .main div:nth-child(3) {
+            grid-area: three;
+        }
+
+        .main div:nth-child(4) {
+            grid-area: four;
+        }
