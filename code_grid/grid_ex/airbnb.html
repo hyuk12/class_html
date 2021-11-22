@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Monsterrat:300,400,500&display=swap");
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            overflow: scroll;
+        }
+
+        .container {
+            gap: 10px;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 100px 150px 1fr 100px;
+            grid-template-rows: 50px 600px 1fr 150px;
+            grid-template-areas:
+                'header header header header'
+                'welcome welcome welcome welcome'
+                'banner showInfo main aside'
+                'footer footer footer footer';
+        }
+
+        .container div {
+
+            padding: 20px;
+            font-size: 20px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            /* border: 1px solid #000; */
+
+        }
+
+        .header {
+            grid-area: header;
+            gap: 10px;
+            display: grid;
+            justify-self: right;
+        }
+
+        .header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header li {
+            margin: 0px 0 0 0px;
+            padding: 10px;
+            border: 0;
+            float: left;
+
+        }
+
+        .header li.box1 {
+            text-align: center;
+            vertical-align: middle;
+
+        }
+
+        .welcome {
+
+            grid-area: welcome;
+            background: url(./imeges/main.png) no-repeat center center;
+            background-size: cover;
+        }
+
+        .banner {
+
+
+            grid-area: banner;
+            align-self: stretch;
+        }
+
+        .banner ul {
+
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .banner li {
+            gap: 50px;
+            margin: 0px 0 0 0px;
+            padding-bottom: 20px;
+            border: 0;
+
+        }
+
+
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-row: auto auto auto;
+            grid-template-areas:
+                'headLine headLine headLine'
+                'img1 img2 img3'
+                'img4 img5 img6';
+        }
+
+        .main div {
+            text-align: center;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .main>.headLine {
+            grid-area: headLine;
+        }
+
+        .main div.img1 {
+            grid-area: img1;
+        }
+
+        .main div.img2 {
+            grid-area: img2;
+        }
+
+        .main div.img3 {
+            grid-area: img3;
+        }
+
+        .main div.img4 {
+            grid-area: img4;
+        }
+
+        .main div.img5 {
+            grid-area: img5;
+        }
+
+        .main div.img6 {
+            grid-area: img6;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+
+
+        .footer {
+
+            grid-area: footer;
+        }
+
+        @media(max-width: 726px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 50px 100px 1fr 50px 1fr 50px 50px;
+                grid-template-areas:
+                    'header'
+                    'welcome'
+                    'banner'
+                    'showInfo'
+                    'main'
+                    'aside'
+                    'footer';
+            }
+
+            .banner {
+                justify-self: center;
+                margin: 0 0 0 0;
+                padding: 0;
+                border: 0;
+                float: left;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li><a href=""><img src="./imeges/베스트.PNG" alt=""></a></li>
+                <li><a href=""><img src="./imeges/원플러스원.PNG" alt=""></a></li>
+                <li><a href=""><img src="./imeges/탑.PNG" alt=""></a></li>
+                <li><a href=""><img src="./imeges/셔츠.PNG" alt=""></a></li>
+                <li><a href=""><img src="./imeges/커뮤니티.PNG" alt=""></a></li>
+                <li><a href=""><img src="./imeges/개인정보.PNG" alt=""></a></li>
+                <li><a href=""><img src="./imeges/돋보기.PNG" alt=""></a><input type="text" name="" id="box1">
+                </li>
+                <li><a href=""><img src="./imeges/장바구니.PNG" alt=""></a></li>
+                <li><a href=""><img src="./imeges/dd.PNG" alt=""></a></li>
+            </ul>
+
+        </div>
+        <div class="welcome"></div>
+        <div class="banner">
+            <ul>
+                <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk">
+                        <img src="./imeges/카톡.png" alt="" width="50px" height="50px">
+                    </a></li>
+                <li><a href="https://line.me/ko/">
+                        <img src="./imeges/라인.png" alt="" width="50px" height="50px">
+                    </a></li>
+                <li><a href="https://www.instagram.com/?hl=ko">
+                        <img src="./imeges/인스타.jpg" alt="" width="50px" height="50px">
+                    </a></li>
+                <li><a href="https://www.facebook.com/">
+                        <img src="./imeges/페이스북.png" alt="" width="50px" height="50px">
+                    </a></li>
+                <li><a href="https://twitter.com/?lang=ko">
+                        <img src="./imeges/트위터.png" alt="" width="50px" height="50px">
+                    </a></li>
+                <li><a href="https://www.youtube.com/">
+                        <img src="./imeges/유튜브.png" alt="" width="50px" height="50px">
+                    </a></li>
+            </ul>
+        </div>
+        <div class="showInfo">
+            <button>NEW</button>
+            <button>HOT</button>
+            <button>SET</button>
+            <button>MEN</button>
+            <button>WOMEN</button>
+            <button>ACC</button>
+        </div>
+        <div class="main">
+            <h2 class="headLine">NEW & HOT</h2>
+            <div class="img1"><img src="./imeges/여자옷1.webp" alt="" width="300px" height="400px">
+                <p>여자옷 1번코디 세트
+                    <br>
+                    KRW 79,000
+                </p>
+            </div>
+
+            <div class="img2"><img src="./imeges/여자옷2.webp" alt="" width="300px" height="400px">
+                <p>여자옷 2번코디 세트
+                    <br>
+                    KRW 119,000
+                </p>
+            </div>
+
+            <div class="img3"><img src="./imeges/여자옷3.webp" alt="" width="300px" height="400px">
+                <p>여자옷 3번코디 세트
+                    <br>
+                    KRW 79,000
+                </p>
+            </div>
+            <p></p>
+            <div class="img4"><img src="./imeges/남자옷1_39000.jpg" alt="" width="300px" height="400px">
+                <p>모크넥 폴라 긴팔티셔츠(3color)
+                    <br>
+                    KRW 39,000
+                </p>
+            </div>
+            <p></p>
+            <div class="img5"><img src="./imeges/남자옷2_8000.jpg" alt="" width="300px" height="400px">
+                <p>링클프리 긴팔티셔츠(7color)
+                    <br>
+                    KRW 8,000
+                </p>
+            </div>
+            <div class="img6"><img src="./imeges/남자옷3_23000.jpg" alt="" width="300px" height="400px">
+                <p>모네 델루나 위머폴라티셔츠(6color)
+                    <br>
+                    KRW 23,000
+                </p>
+            </div>
+            <p></p>
+
+
+        </div>
+        <div class="aside">aside</div>
+        <div class="footer">
+            <p style="font-size: 14px;">주식회사| 데이 컴퍼니 | 대표: 혀코</p>
+            <p style="font-size: 14px;">회사 소재지 | 부산 광역시 부산진구 서면 111-11</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
